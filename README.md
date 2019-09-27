@@ -54,6 +54,8 @@ In addition, the Unity environment must be installed and included into the main 
 
 2. Place the file in the main root project directory, and unzip (or decompress) the file.
 
+To Run the code, open the notebook `Navigation.ipynb`, and run code cells sequentially. The training cell can be skipped to move directly onto the last cell, to see how the pre-trained model works on the Unity environment.
+
 ## Project Motivation<a name="motivation"></a>
 
 For this project, I was interested in learning how to train a Deep Q Learning network, and practice the following skills:
