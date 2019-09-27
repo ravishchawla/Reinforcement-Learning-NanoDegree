@@ -1,55 +1,87 @@
 [//]: # (Image References)
 
-[image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+[image1]: https://miro.medium.com/max/1600/1*LBCdnzdWfwsDV2hEXmv_DA.gif "Trained Agent"
+[image2]: https://miro.medium.com/max/4775/1*OBX8pz2pNJWVQnCtpoYJPw.png "Results"
 
-# Project 1: Navigation
+# Reinforcement Learning Navigation
 
-### Introduction
+### Table of Contents
 
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Project Motivation](#motivation)
+4. [File Descriptions](#files)
+5. [Results](#results)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
+
+## Description <a name="description"></a>
+In this project, we trained a Reinforcement Learning agent to navigate a Unity environment, with a goal to collect _yellow bananas_ in order to maximize its score.
 
 ![Trained Agent][image1]
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+The Environment is based on Unity. As shown in the above image, there are yellow bananas and blue bananas. You get a reward of +1 every time you pick up a yellow banana, and -1 for every blue banana.
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
+The environment is based on a 37-dimensional state space, containing information such as the agent's velocity, and a ray-based perception of objects around the agent's forward looking direction. The action space consists of 4 available actions:
 - **`0`** - move forward.
 - **`1`** - move backward.
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment, the goal is to train the agent and get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
+## Installation <a name="installation"></a>
+
+This project uses Python 3, along with Jupyter Notebook. The following libraries are necessary for running the notebook:
+* Pandas
+* Numpy
+* MatplotLib
+* PyTorch
+* `python/`
+
+For the last package, packages are included in the `python/` directory. To install them, `cd` into the directory and run `pip install .`
+
+Packages used by this project can also be installed as a Conda Environment using the provided Requirements.txt file.
+
+In addition, the Unity environment must be installed and included into the main project directory for the code to run:
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
-    
-    (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
-    (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
+2. Place the file in the main root project directory, and unzip (or decompress) the file.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+## Project Motivation<a name="motivation"></a>
 
-### Instructions
+For this project, I was interested in exploring the Starbucks dataset to better understand the following questions:
+1. How does Gender influence how much someone spends at Starbucks? Do men spend more than women, or the other way around?
+2. How many people view and complete offers? And how many people complete offers without opening them first?
+3. What are the attributes that most contribute to someone’s spending habits at Starbucks?
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+For this project, I was interested in learning how to train a Deep Q Learning network, and practice the following skills:
+1. How a Deep Q Learning Network is designed, and how it is trained using replay memory.
+2. How a Deep Q Learning Network differs from its variations, such as Dueling Networks.
+3. How a Trained Deep Q Learning Network model can be used to interact and play in an actual environment.
 
-### (Optional) Challenge: Learning from Pixels
+## File Descriptions <a name="files"></a>
 
-After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
+The main code for this project is included in the notebook `Navigation.ipynb`. The notebooks contains code for a Network model, Learning agent, training code, and usage of the trained model to play the navigation game.
+The code and results are also posted on Medium as a [blog post](https://medium.com/@ravishchawla/how-much-do-you-spend-at-starbucks-4f142138924a).
 
-To solve this harder task, you'll need to download a new Unity environment.  This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view.  (**Note**: Udacity students should not submit a project with this new environment.)
+Other files in the project are:
 
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86_64.zip)
+- `python/` - this directory contains required packages for running the Unity environment
+- `pt` extension files - these are model checkpoint files for the deep networks
 
-Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
+## Results<a name="results"></a>
+In my final results, I learnt answwers to the above 3 questions, which I answered on the Medium blog post.
+The trained Dueling Deep Q Learning Networks were able to solve the environment quickly and well.
 
-(_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
+![Training results][Image2]
+
+More detailed findings can be found at the post available [here](https://medium.com/@ravishchawla/how-much-do-you-spend-at-starbucks-4f142138924a).
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+Credit to Udacity for providing the data and environment. You can find the Licensing for the data and other descriptive information from [Udacity](https://www.udacity.om). This code is free to use.
