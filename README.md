@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: https://miro.medium.com/max/1600/1*LBCdnzdWfwsDV2hEXmv_DA.gif "Trained Agent"
+[image1]: https://miro.medium.com/max/1000/1*ZJezBP0mdDudLtgtbbuJuA.gif "Trained Agent"
 [image2]: https://miro.medium.com/max/4775/1*OBX8pz2pNJWVQnCtpoYJPw.png "Results"
 
 # Reinforcement Learning Navigation
@@ -16,6 +16,8 @@
 
 ## Description <a name="description"></a>
 In this project, we trained a Reinforcement Learning agent to navigate a Unity environment, with a goal to collect _yellow bananas_ in order to maximize its score.
+
+For the final report, see the Medium post on the work [here](https://medium.com/ml2vec/reinforcement-deep-q-learning-for-playing-a-game-in-unity-d2577fb50a81).
 
 ![Trained Agent][image1]
 
@@ -54,11 +56,6 @@ In addition, the Unity environment must be installed and included into the main 
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was interested in exploring the Starbucks dataset to better understand the following questions:
-1. How does Gender influence how much someone spends at Starbucks? Do men spend more than women, or the other way around?
-2. How many people view and complete offers? And how many people complete offers without opening them first?
-3. What are the attributes that most contribute to someone’s spending habits at Starbucks?
-
 For this project, I was interested in learning how to train a Deep Q Learning network, and practice the following skills:
 1. How a Deep Q Learning Network is designed, and how it is trained using replay memory.
 2. How a Deep Q Learning Network differs from its variations, such as Dueling Networks.
@@ -67,7 +64,7 @@ For this project, I was interested in learning how to train a Deep Q Learning ne
 ## File Descriptions <a name="files"></a>
 
 The main code for this project is included in the notebook `Navigation.ipynb`. The notebooks contains code for a Network model, Learning agent, training code, and usage of the trained model to play the navigation game.
-The code and results are also posted on Medium as a [blog post](https://medium.com/@ravishchawla/how-much-do-you-spend-at-starbucks-4f142138924a).
+The code and results are also posted on Medium as a [blog post](https://medium.com/ml2vec/reinforcement-deep-q-learning-for-playing-a-game-in-unity-d2577fb50a81).
 
 Other files in the project are:
 
@@ -80,7 +77,7 @@ The trained Dueling Deep Q Learning Networks were able to solve the environment 
 
 ![Training results][Image2]
 
-More detailed findings can be found at the post available [here](https://medium.com/@ravishchawla/how-much-do-you-spend-at-starbucks-4f142138924a).
+More detailed findings can be found at the post available [here](https://medium.com/ml2vec/reinforcement-deep-q-learning-for-playing-a-game-in-unity-d2577fb50a81).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
