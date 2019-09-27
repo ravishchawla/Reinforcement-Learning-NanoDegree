@@ -77,6 +77,8 @@ Other files in the project are:
 In my final results, I learnt answwers to the above 3 questions, which I answered on the Medium blog post.
 The trained Dueling Deep Q Learning Networks were able to solve the environment quickly and well.
 
+With the Vanilla network, the model was able to get a score of +13 in 250 episodes, and with Dueling networks, in 350 episodes.
+
 ![Training results][Image2]
 
 More detailed findings can be found at the post available [here](https://medium.com/ml2vec/reinforcement-deep-q-learning-for-playing-a-game-in-unity-d2577fb50a81).
