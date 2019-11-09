@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image2]: https://miro.medium.com/max/4775/1*OBX8pz2pNJWVQnCtpoYJPw.png "Results"
+[image2]: https://raw.githubusercontent.com/ravishchawla/Reinforcement-Learning-Navigation/master/Project%202%20-%20Continous%20Control/chart.png "Results"
 
 # Reinforcement Learning Continous Control
 

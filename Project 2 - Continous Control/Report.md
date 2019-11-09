@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://miro.medium.com/max/1626/1*BVST6rlxL2csw3vxpeBS8Q.png "Pseudocode"
-[image2]: https://miro.medium.com/max/4775/1*OBX8pz2pNJWVQnCtpoYJPw.png "Results"
+[image2]: https://raw.githubusercontent.com/ravishchawla/Reinforcement-Learning-Navigation/master/Project%202%20-%20Continous%20Control/chart.png "Results"
 
 # Reinforcement Learning Continous Control Report
 
@@ -57,7 +57,7 @@ The Parameters used for the Agent are:
 The goal of this project was to get an average reward from the last 100 episodes to be over 30. After training the agent with different model configurations, the best performing model is the configuration shown above. Adding the Batch Normalization layer improved the model the most, and helped increase the reward much quicker.
 
 
-With the current configuration, the target average reward reached in **140 episodes**.
+With the current configuration, the target average reward reached in **144 episodes**.
 
 ![Results][Image2]
 
