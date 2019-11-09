@@ -23,6 +23,7 @@ The Actor and Critic Models have Local and Target models each, where the Target 
 Like other Reinforcment Learning models, a Replay Buffer is used to sample experience tuples to update the neural networks at each iteration as well. Random batches of State-Action-Reward-NextAction tuples are sampled to update the policy and value networks.
 
 The Models used for training are:
+
 | Actor Model Layer | Shape |
 | ------------- | ------------- |
 | Input Layer  | _33_ x 128  |
@@ -42,6 +43,7 @@ The Input shape is number of states, _33_, and output is actions for agents bein
 
 
 The Parameters used for the Agent are:
+
 | Hyperparameter  | value |
 | ------------- | ------------- |
 | Replay Buffer Size  | 1e5  |
