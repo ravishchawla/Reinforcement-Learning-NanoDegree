@@ -3,7 +3,7 @@
 [image1]: https://raw.githubusercontent.com/ravishchawla/Reinforcement-Learning-NanoDegree/master/Project%203%20-%20Collaboration%20and%20Competition/tennis.gif
 "Agent"
 
-[image2]: https://raw.githubusercontent.com/ravishchawla/Reinforcement-Learning-Navigation/master/Project%202%20-%20Continous%20Control/chart.png "Results"
+[image2]: https://raw.githubusercontent.com/ravishchawla/Reinforcement-Learning-NanoDegree/master/Project%203%20-%20Collaboration%20and%20Competition/results.png "Results"
 
 # Reinforcement Learning Continous Control
 
