@@ -69,7 +69,7 @@ The Parameters used for the Agent are:
 The goal of this project was to get an average reward from the last 100 episodes (of either agent) to be over 0.5 . After training the agent with different model configurations, the best performing model is the configuration shown above. After multiple hyperparameter tuning configurations, using a Learning Rate of `1e-4` was ideal, and showed significant improvement over smaller and bigger values than it.
 
 
-With the current configuration, the target average reward reached in **2,453 episodes**.
+With the current configuration, the target average reward reached in **2,328 episodes**.
 
 ![Results][Image2]
 

@@ -76,7 +76,7 @@ Other files in the project are:
 In my final results, I learnt answwers to the above 3 questions, which I answered in the report.
 The trained Multi DDPG models were able to solve the environment consistently and well.
 
-With the final tuned network, the model was able to get an average score of +0.5 in 2,400 episodes.
+With the final tuned network, the model was able to get an average score of +0.5 in 2,328 episodes.
 
 ![Training results][Image2]
 
